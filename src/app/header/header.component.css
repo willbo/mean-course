@@ -2,6 +2,7 @@ ul {
   list-style: none;
   padding: 0;
   margin: 0;
+  display: flex;
 }
 
 a {
@@ -13,6 +14,6 @@ a {
   flex: 1 1 auto;
 }
 
-ul {
-  display: flex;
+.loginName {
+  font-size: 50%;
 }

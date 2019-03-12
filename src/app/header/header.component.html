@@ -1,7 +1,10 @@
 <mat-toolbar color="primary">
-  <span><a routerLink="/">MEANPosts</a></span>
+  <span><a routerLink="/">Posts</a></span>
   <span class="spacer"></span>
   <ul>
+    <li *ngIf="userIsAuthenticated">
+      <span class="loginName">{{userName}}</span>
+    </li>
     <li *ngIf="userIsAuthenticated">
       <a mat-button routerLink="/create" routerLinkActive="mat-accent">New Post</a>
     </li>

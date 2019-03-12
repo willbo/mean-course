@@ -50,7 +50,8 @@ exports.userLogin = (req, res, next) => {
       res.status(200).json({
         token: token,
         expiresIn: 3600,
-        userId: user._id
+        userId: user._id,
+        userName: user.email
       });
     })
     .catch(err => {
