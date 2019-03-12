@@ -61,9 +61,9 @@ export class PostsService {
       postData.append('image', image, title);
     } else {
         postData = {
-        id: id,
-        title: title,
-        content: content,
+        id,
+        title,
+        content,
         imagePath: image,
         creator: null
 
